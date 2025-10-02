@@ -13,4 +13,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-ancestors 'self'; script-src 'self' https://platform.twitter.com; frame-src 'self' https://syndication.twitter.com/ https://platform.twitter.com/;"
+    Content-Security-Policy = "script-src 'self' https://platform.twitter.com; style-src 'self' 'unsafe-inline' https://platform.twitter.com; frame-src 'self' https://syndication.twitter.com/ https://platform.twitter.com/; img-src 'self' https://pbs.twimg.com data:; connect-src 'self' https://syndication.twitter.com https://api.twitter.com;"
