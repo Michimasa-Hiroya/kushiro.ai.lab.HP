@@ -157,3 +157,19 @@ footer {
 #contact button:hover {
     background-color: #2980b9;
 }
+
+/* News Section */
+#news .news-article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+#news .news-article:last-child {
+    border-bottom: none;
+}
+
+#news .news-date {
+    font-size: 0.9em;
+    color: #888;
+}

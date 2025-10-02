@@ -1,0 +1,36 @@
+ 1. GitHubで新しいリポジトリを作成:
+   2. ローカルのプロジェクトをGitHubにプッシュ:
+  `shell
+          git init
+          git add .
+          git commit -m "Initial commit"
+          git branch -M main
+          git remote add origin
+  https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+          git push -u origin main
+          `
+
+  ステップ2: Netlifyでのデプロイ
+
+  1.  Netlifyにサインアップ:
+      *   Netlify (https://www.netlify.com/)にアクセスし、GitHubアカウントでサインア
+  ップ（またはログイン）します。
+
+
+   2. サイトをインポート:
+   3. デプロイ設定の確認:
+  これでデプロイが開始されます。数分待つと、Netlifyが提供するURL（例：
+  random-name-12345.netlify.app）であなたのウェブサイトが公開されます！
+
+  ---
+
+  ### パート2：ウェブサイトの更新方法（今後繰り返し行います）
+
+  新着情報を追加したり、内容を更新したい場合は、以下の手順を実行します。
+
+
+   1. ローカルでサーバーを起動:
+   3. ローカルサーバーを停止:
+   4. 変更をGitHubにプッシュ:
+   5. 自動デプロイ:
+  以上が手順となります。ご不明な点があれば、お気軽にご質問ください。
