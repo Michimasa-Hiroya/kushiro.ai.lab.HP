@@ -31,7 +31,7 @@
     <main>
         <section id="news" class="container">
             <h2>新着情報</h2>
-            <div id="news-list"></div>
+            <a class="twitter-timeline" data-height="600" href="https://twitter.com/kushiro_ai_lab?ref_src=twsrc%5Etfw">Tweets by kushiro_ai_lab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
 
         <section id="about" class="container">
@@ -81,27 +81,8 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 釧路生成AIラボ</p>
-            <p><a href="login.html">管理者ログイン</a></p>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            const response = await fetch('/news');
-            const newsList = await response.json();
-            const newsListElement = document.getElementById('news-list');
-
-            let html = '';
-            for (const article of newsList) {
-                html += `
-                    <div class="news-article">
-                        <h3>${article.title}</h3>
-                        <p class="news-date">${article.date}</p>
-                        <p>${article.content}</p>
-                    </div>
-                `;
-            }
-            newsListElement.innerHTML = html;
-        });
-    </script>
+    
 </body>
 </html>
