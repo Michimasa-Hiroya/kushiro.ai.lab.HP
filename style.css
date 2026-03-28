@@ -216,6 +216,24 @@ h1, h2, h3, h4 {
   height: 44px;
 }
 
+/* テキストロゴ */
+.logo-wordmark {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  transition: color var(--transition);
+}
+
+#site-header.scrolled .logo-wordmark {
+  color: var(--color-primary);
+}
+
+.logo-accent {
+  color: var(--color-accent);
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -444,7 +462,7 @@ h1, h2, h3, h4 {
 .feature-card {
   background: var(--color-white);
   border-radius: var(--radius);
-  padding: 36px 28px;
+  padding: 40px 32px;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-border);
   transition: all var(--transition);
@@ -476,9 +494,9 @@ h1, h2, h3, h4 {
 }
 
 .feature-card p {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--color-text-muted);
-  line-height: 1.7;
+  line-height: 1.85;
 }
 
 /* ===== SCHEDULE ===== */
@@ -1034,6 +1052,18 @@ h1, h2, h3, h4 {
   font-size: 3.5rem;
 }
 
+.work-thumb {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.work-card:hover .work-thumb {
+  transform: scale(1.04);
+}
+
 .work-content { padding: 24px; }
 
 .work-tag {
@@ -1048,7 +1078,7 @@ h1, h2, h3, h4 {
 }
 
 .work-content h3   { font-size: 1rem; margin-bottom: 8px; }
-.work-content p    { font-size: 0.87rem; color: var(--color-text-muted); line-height: 1.65; margin-bottom: 16px; }
+.work-content p    { font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.75; margin-bottom: 16px; }
 
 .work-link {
   font-size: 0.85rem;
