@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="釧路生成AIラボが制作・開発したウェブサイト・アプリ・ツールの紹介ページです。">
+  <title>作品紹介 | 釧路生成AIラボ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDCTPS2WHL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CDCTPS2WHL');
+  </script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">
+          <img src="images/1000013938.png" alt="釧路生成AIラボ">
+        </a>
+        <nav>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="about.html">ラボについて</a></li>
+            <li><a href="activities.html">活動内容</a></li>
+            <li><a href="works.html" class="active">作品紹介</a></li>
+            <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <div class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">ホーム</a>
+        <span>›</span>
+        <span>作品紹介</span>
+      </nav>
+      <h1>作品紹介</h1>
+      <p>AIを活用して制作したウェブサイト・アプリ・ツールをご紹介します</p>
+    </div>
+  </div>
+
+  <!-- ===== WORKS GRID ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">制作実績</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="80">生成AIと共に創り上げた作品の数々</p>
+      <div class="works-grid">
+
+        <!-- 作品1: このHP -->
+        <div class="work-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="work-thumb-placeholder">🌐</div>
+          <div class="work-content">
+            <span class="work-tag">Webサイト</span>
+            <h3>釧路生成AIラボ 公式HP</h3>
+            <p>GeminiCLI→Claude Code で構築した公式サイト。HTML/CSS/Python (FastAPI) のマルチページ構成。Netlify でデプロイ。費用0円。</p>
+            <div style="font-size:0.8rem; color:var(--color-text-muted); margin-bottom:10px;">🛠 GeminiCLI / Claude Code / Netlify · 2025年9月</div>
+            <a href="https://kushiro-ai-lab.netlify.app/" target="_blank" rel="noopener" class="work-link">サイトを見る</a>
+          </div>
+        </div>
+
+        <!-- 作品2: タップカルテ -->
+        <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="work-thumb-placeholder">🏥</div>
+          <div class="work-content">
+            <span class="work-tag">医療アプリ</span>
+            <h3>タップカルテ</h3>
+            <p>看護師・リハビリ職向け AI 看護記録生成アプリ。自然な文章を入力するだけで専門的な看護記録・医療文書を自動作成。費用6,000円程度。</p>
+            <div style="font-size:0.8rem; color:var(--color-text-muted); margin-bottom:10px;">🛠 Genspark / Claude Code / Cloudflare · 2025年10月</div>
+            <a href="https://tap-karte.com" target="_blank" rel="noopener" class="work-link">アプリを見る</a>
+          </div>
+        </div>
+
+        <!-- 作品3: 訪問スケジュール -->
+        <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="work-thumb-placeholder">📅</div>
+          <div class="work-content">
+            <span class="work-tag">業務効率化ツール</span>
+            <h3>訪問スケジュール</h3>
+            <p>訪問看護・訪問介護向けのスケジュール管理ウェブアプリ。カレンダー形式で訪問予定を一覧管理できる。費用100円程度。</p>
+            <div style="font-size:0.8rem; color:var(--color-text-muted); margin-bottom:10px;">🛠 Google AI Studio / Render / ムームードメイン · 2025年11月</div>
+            <a href="https://visit-schedule.tech" target="_blank" rel="noopener" class="work-link">アプリを見る</a>
+          </div>
+        </div>
+
+        <!-- 作品4: 釧路市津波シミュレーション -->
+        <div class="work-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="work-thumb-placeholder">🌊</div>
+          <div class="work-content">
+            <span class="work-tag">防災アプリ</span>
+            <h3>釧路市 津波避難所マップ</h3>
+            <p>釧路市の津波浸水シミュレーション×避難所マップ。現在地から最寄りの避難所を瞬時に検索。地域の防災に貢献するAI活用の実例。費用5,000円程度。</p>
+            <div style="font-size:0.8rem; color:var(--color-text-muted); margin-bottom:10px;">🛠 Claude Code / Netlify · 2026年3月</div>
+            <a href="https://kushiro-shelter.netlify.app/" target="_blank" rel="noopener" class="work-link">アプリを見る</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 追加予定の案内 -->
+      <div style="text-align:center; margin-top:56px; padding:40px; background:var(--color-light); border-radius:var(--radius); border:2px dashed var(--color-border);" data-aos="fade-up">
+        <div style="font-size:2.5rem; margin-bottom:12px;">➕</div>
+        <h3 style="font-size:1.1rem; margin-bottom:8px;">作品を随時追加中</h3>
+        <p style="color:var(--color-text-muted); font-size:0.92rem;">勉強会で作成したアプリや、メンバーの制作物を随時掲載していきます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI活用について ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">AI × 開発の進め方</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="80">当ラボでは生成AIを積極的に活用して制作しています</p>
+      <div class="feature-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-icon">💬</div>
+          <h3>プロンプト設計</h3>
+          <p>Claude・ChatGPT・Geminiを使い分け、目的に応じた最適なプロンプトで効率的に開発・デザインを行います。</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">⚡</div>
+          <h3>スピード制作</h3>
+          <p>AIのサポートにより、従来の数分の一の時間でプロトタイプを作成。アイデアをすばやく形にできます。</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">🔄</div>
+          <h3>反復改善</h3>
+          <p>ユーザーフィードバックとAIの提案を組み合わせ、継続的に品質を向上させるアジャイルな開発スタイル。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>あなたも一緒に作ってみませんか？</h2>
+      <p>プログラミング未経験でも、AIを使えばアプリ・サイトが作れます。</p>
+      <div class="cta-btns">
+        <a href="activities.html" class="btn btn-white">勉強会に参加する</a>
+        <a href="contact.html" class="btn btn-secondary">お問い合わせ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/1000013938.png" alt="釧路生成AIラボ">
+          <p>釧路市を拠点に活動する、生成AIの実践的な学習コミュニティ。<br>AIで地域の未来を共に創ります。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>メニュー</h4>
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">ラボについて</a></li>
+            <li><a href="activities.html">活動内容</a></li>
+            <li><a href="works.html">作品紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>SNS・連絡先</h4>
+          <div class="footer-social-links">
+            <a href="https://twitter.com/kushiro_ai_lab" target="_blank" rel="noopener" class="social-icon" aria-label="X (Twitter)">𝕏</a>
+            <a href="https://line.me/ti/g2/ibPDHcip1RXhfdNFdKLKRdsXNHEj5xhSWqjSVQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="social-icon" aria-label="LINE">L</a>
+            <a href="mailto:kushiro.ai.lab@gmail.com" class="social-icon" aria-label="メール">✉</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 釧路生成AIラボ. All rights reserved.</span>
+        <span>Powered by AI 🤖</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true, offset: 60 });
+
+    const header    = document.getElementById('site-header');
+    const hamburger = document.getElementById('hamburger');
+    const navList   = document.getElementById('nav-list');
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navList.classList.toggle('open');
+    });
+
+    navList.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navList.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

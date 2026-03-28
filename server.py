@@ -19,11 +19,11 @@ app.mount("/static", StaticFiles(directory=BASE_DIR), name="static")
 
 # Load news data
 def load_news():
-    # Check if news file exists
     if not os.path.exists(NEWS_FILE):
-        return [] # Return empty list if no news
+        return []
     with open(NEWS_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root():

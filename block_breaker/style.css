@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #33ff33;
+    font-family: 'DotGothic16', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 640px;
+    background-color: #000;
+    border: 4px solid #33ff33;
+    border-radius: 16px; /* CRTテレビっぽく少し丸みを持たせる */
+    box-shadow: 0 0 20px rgba(51, 255, 51, 0.5), inset 0 0 40px rgba(51, 255, 51, 0.2);
+    overflow: hidden;
+}
+
+#ui-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 24px;
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom: 2px dashed #1a801a;
+    background-color: #050505;
+    text-shadow: 0 0 5px #33ff33;
+}
+
+canvas {
+    display: block;
+    image-rendering: pixelated;
+}
+
+.screen {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.screen.active {
+    display: flex;
+}
+
+h1 {
+    font-size: 56px;
+    color: #ff3333;
+    text-shadow: 3px 3px 0 #fff, 0 0 10px #ff3333;
+    margin-bottom: 20px;
+    letter-spacing: 6px;
+}
+
+p {
+    font-size: 24px;
+    margin: 15px 0;
+    text-shadow: 0 0 5px #33ff33;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+/* 画面全体のブラウン管エフェクト（走査線） */
+.crt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.25) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+/* 画面の湾曲・にじみエフェクト */
+#game-container::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+    box-shadow: inset 0 0 60px rgba(0,0,0,0.8);
+}

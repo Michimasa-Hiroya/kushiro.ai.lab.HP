@@ -1,89 +1,308 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="GgK0_bt_o9kFvMd3Odpcpjx9mIUiBnCT80f5TV36qAw" />
-    <title>釧路生成AIラボ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="GgK0_bt_o9kFvMd3Odpcpjx9mIUiBnCT80f5TV36qAw">
+  <meta name="description" content="釧路生成AIラボは、釧路市を拠点に活動する生成AIの実践的な学習コミュニティです。ChatGPT・Gemini・Claudeを活用し、地域の未来をAIと共に創ります。">
+  <title>釧路生成AIラボ | Kushiro AI Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDCTPS2WHL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CDCTPS2WHL');
+  </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html"><img src="1000013938.png" alt="釧路生成AIラボ ロゴ" class="logo"></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#news">新着情報</a></li>
-                    <li><a href="#about">ラボについて</a></li>
-                    <li><a href="#activities">活動内容</a></li>
-                    <li><a href="#representative">代表者</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-            </nav>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">
+          <img src="images/1000013938.png" alt="釧路生成AIラボ">
+        </a>
+        <nav>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="about.html">ラボについて</a></li>
+            <li><a href="activities.html">活動内容</a></li>
+            <li><a href="works.html">作品紹介</a></li>
+            <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">📍 釧路市発 · 生成AI学習コミュニティ</div>
+      <h1 class="hero-title">
+        釧路の未来を、<br><span class="accent">AIと共に</span>創る。
+      </h1>
+      <p class="hero-subtitle">
+        生成AIの力で地域課題を解決し、一人ひとりの仕事・生活をもっと豊かに。
+        一緒に学び、実践し、釧路から未来を拓きましょう。
+      </p>
+      <div class="hero-btns">
+        <a href="activities.html" class="btn btn-primary">🎓 勉強会に参加する</a>
+        <a href="about.html" class="btn btn-secondary">ラボを知る →</a>
+      </div>
+    </div>
+    <div class="hero-scroll">SCROLL</div>
+  </section>
+
+  <!-- ===== FEATURE CARDS ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">釧路生成AIラボとは</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="80">生成AIを「難しいもの」から「頼もしいパートナー」に変える場所</p>
+      <div class="feature-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-icon">🤝</div>
+          <h3>情報共有・コミュニティ</h3>
+          <p>日進月歩のAI最新トレンドをタイムリーに共有。一人では追えない情報も、みんなで楽しく学べます。</p>
         </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2>釧路の未来を、AIと共に創る。</h2>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">⚡</div>
+          <h3>業務効率化を実践</h3>
+          <p>資料作成・メール文章・画像生成など、日常業務でAIを活用する実践的なノウハウを習得できます。</p>
         </div>
-    </section>
-
-    <main>
-        <section id="news" class="container">
-            <h2>新着情報</h2>
-            <a class="twitter-timeline" data-height="600" href="https://twitter.com/kushiro_ai_lab?ref_src=twsrc%5Etfw">Tweets by kushiro_ai_lab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </section>
-
-        <section id="about" class="container">
-            <h2>ラボについて</h2>
-            <p>
-釧路生成AIラボは、釧路市で活動する生成AIの学習コミュニティです。生成AIに関する有益な情報を共有し、共に学ぶことを目的としています。<br><br>
-基本的な使い方から、仕事や趣味に役立つ活用事例まで、皆さんで一緒に楽しく学びませんか？<br>
-スキルを広げたい方、副業に興味がある方も歓迎します。
-</p>
-        </section>
-
-        <section id="activities" class="container">
-            <h2>活動内容</h2>
-            <p>定期的な勉強会や、企業向けのコンサルティングを行っています。</p>
-            <img src="生成AI勉強会_20250922_101423_0000.png" alt="生成AI勉強会の様子">
-        </section>
-
-        <section id="representative" class="container">
-            <h2>代表者</h2>
-            <p>
-    <strong>代表：廣谷 迪正</strong><br>
-    本業や副業でAIを活用する医療従事者。<br>
-    主なAI活用例として、勉強会の資料作成、メールの自動返信、画像生成、文章の編集など、実践的なノウハウを共有します。
-    </p>
-        </section>
-
-        <section id="contact" class="container">
-            <h2>お問い合わせ</h2>
-            <form action="https://formspree.io/f/meorerpy" method="POST">
-                <div class="form-group">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">お問い合わせ内容</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">送信</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 釧路生成AIラボ</p>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">🌏</div>
+          <h3>地域活性化への貢献</h3>
+          <p>釧路の人口減少・労働力不足という課題を、生成AIを活用した生産性向上で解決していきます。</p>
         </div>
-    </footer>
-    
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">次回の勉強会</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="80">参加費 1回 100円 · 初心者歓迎 · 釧路市内開催</p>
+      <div class="schedule-list" data-aos="fade-up" data-aos-delay="120">
+        <div class="schedule-item">
+          <div class="schedule-date">
+            <div class="day">17</div>
+            <div class="month">4月 (金)</div>
+          </div>
+          <div class="schedule-info">
+            <h4>生成AI勉強会（次回）</h4>
+            <p>📍 釧路市民活動センターわっと 会議室1 · 🕒 19:30〜20:30 · 💰 100円</p>
+          </div>
+          <span class="schedule-badge">次回開催</span>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:32px;" data-aos="fade-up">
+        <a href="activities.html" class="btn btn-outline">活動内容を詳しく見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">参加者の声</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="80">実際に勉強会に参加した方々のご感想</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+          <p class="testimonial-text">AIのことは難しそうと思っていましたが、実際にやってみると本当に便利で驚きました。仕事のメール作成がこんなに楽になるとは思いませんでした！</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">A.K. さん</div>
+              <div class="testimonial-role">会社員・釧路市在住</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <p class="testimonial-text">代表の廣谷さんの説明がとてもわかりやすく、初心者の私でもすぐに使い方が理解できました。次回も参加します！</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">S.M. さん</div>
+              <div class="testimonial-role">自営業・釧路市在住</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <p class="testimonial-text">副業にAIを活用したいと思って参加しました。実践的な内容で、すぐに使えるアイデアがたくさん得られました。</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">T.H. さん</div>
+              <div class="testimonial-role">医療従事者・釧路市在住</div>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== X TIMELINE ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">最新情報</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="80">X（Twitter）で最新の勉強会情報やAIニュースを発信中</p>
+      <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="120">
+        <a class="twitter-timeline" data-height="600" href="https://twitter.com/kushiro_ai_lab?ref_src=twsrc%5Etfw">Tweets by kushiro_ai_lab</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" data-aos="fade-up">
+    <div class="container">
+      <h2>一緒に、釧路の未来を創りませんか？</h2>
+      <p>初心者の方も、企業担当者の方も、まずはお気軽にご参加ください。</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-white">お問い合わせはこちら</a>
+        <a href="activities.html" class="btn btn-secondary">勉強会の詳細を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/1000013938.png" alt="釧路生成AIラボ">
+          <p>釧路市を拠点に活動する、生成AIの実践的な学習コミュニティ。<br>AIで地域の未来を共に創ります。</p>
+        </div>
+        <div class="footer-nav">
+          <h4>メニュー</h4>
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">ラボについて</a></li>
+            <li><a href="activities.html">活動内容</a></li>
+            <li><a href="works.html">作品紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>SNS・連絡先</h4>
+          <div class="footer-social-links">
+            <a href="https://twitter.com/kushiro_ai_lab" target="_blank" rel="noopener" class="social-icon" aria-label="X (Twitter)">𝕏</a>
+            <a href="https://line.me/ti/g2/ibPDHcip1RXhfdNFdKLKRdsXNHEj5xhSWqjSVQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="social-icon" aria-label="LINE">L</a>
+            <a href="mailto:kushiro.ai.lab@gmail.com" class="social-icon" aria-label="メール">✉</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 釧路生成AIラボ. All rights reserved.</span>
+        <span>Powered by AI 🤖</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // AOS 初期化
+    AOS.init({ duration: 700, once: true, offset: 60 });
+
+    // スクロールでヘッダースタイル変更
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // ハンバーガーメニュー
+    const hamburger = document.getElementById('hamburger');
+    const navList   = document.getElementById('nav-list');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navList.classList.toggle('open');
+    });
+    navList.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navList.classList.remove('open');
+      });
+    });
+
+    // パーティクルアニメーション
+    (function() {
+      const canvas = document.getElementById('hero-canvas');
+      const ctx    = canvas.getContext('2d');
+      let particles = [];
+      const PARTICLE_COUNT = 80;
+      const MAX_DIST       = 130;
+
+      function resize() {
+        canvas.width  = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+
+      function createParticles() {
+        particles = [];
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+          particles.push({
+            x:  Math.random() * canvas.width,
+            y:  Math.random() * canvas.height,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4,
+            r:  Math.random() * 1.5 + 0.8
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+          if (p.y < 0 || p.y > canvas.height)  p.vy *= -1;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(0, 180, 216, 0.7)';
+          ctx.fill();
+        });
+
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx   = particles[i].x - particles[j].x;
+            const dy   = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < MAX_DIST) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = 'rgba(0, 180, 216, ' + (0.25 * (1 - dist / MAX_DIST)) + ')';
+              ctx.lineWidth   = 0.6;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', () => { resize(); createParticles(); });
+      resize();
+      createParticles();
+      draw();
+    })();
+  </script>
 </body>
 </html>

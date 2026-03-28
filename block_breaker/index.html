@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昭和レトロ ブロック崩し</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div id="game-container">
+        <div id="ui-header">
+            <div id="score">SCORE: 000000</div>
+            <div id="level">STAGE: 1</div>
+            <div id="lives">LIVES: ♥♥♥</div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="start-screen" class="screen active">
+            <h1>BLOCK BREAKER</h1>
+            <p>INSERT COIN TO PLAY</p>
+            <p class="blink">CLICK OR PRESS SPACE TO START</p>
+        </div>
+        <div id="game-over-screen" class="screen">
+            <h1>GAME OVER</h1>
+            <p>SCORE: <span id="final-score">0</span></p>
+            <p class="blink">CLICK TO RETRY</p>
+        </div>
+        <div id="clear-screen" class="screen">
+            <h1>CONGRATULATIONS!</h1>
+            <p>YOU CLEARED ALL STAGES!</p>
+            <p>SCORE: <span id="clear-score">0</span></p>
+            <p class="blink">CLICK TO PLAY AGAIN</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
